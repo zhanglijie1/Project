@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>选项</title>
+
+<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+
+<script>  
+$(document).ready(function() {  
+  
+var MaxInputs       = 5; //maximum input boxes allowed  
+var InputsWrapper   = $("#InputsWrapper"); //Input boxes wrapper ID  
+var AddButton       = $("#AddMoreFileBox"); //Add button ID  
+  
+var x = InputsWrapper.length; //initlal text box count  
+var count=0; //to keep track of text box added  
+  
+$(AddButton).click(function (e)  //on add input button click  
+{  
+        if(x <= MaxInputs) //max input box allowed  
+        {  
+            count++; //text box added increment  
+            //add input box  
+            $(InputsWrapper).append('<div><td><input type="button" value="—"class="removeclass"></td><td><select name="diaochaname'+ count +'" style="width:200px;height:26px"	><option value="ptmc">平台名称</option><option value="pzrq">调查年度</option><option value="name" selected>填表人</option></select></td><td><input type="text" name="name'+ count +'" id="field_'+ count +'" value="" style="width:300px;height:26px"/></td></div>');  
+            x++; //text box increment  
+        }  
+return false;  
+});  
+  
+$("body").on("click",".removeclass", function(e){ //user click on remove text  
+        if( x > 1 ) {  
+                $(this).parent('div').remove(); //remove text box  
+                x--; //decrement textbox  
+        }  
+return false;  
+})   
+  
+});  
+</script>
+
+<style>
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+#dv {
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+	margin: 0px auto 0px;
+}
+</style>
+</head>
+<body>
+
+	<form action="ChaxunServlet?method=search" method="post">
+		<div id="InputsWrapper">
+
+			<tr>
+				<td><input type="button" id="AddMoreFileBox"
+					class="btn btn-info" value="＋"></td>
+				<td colspan="2"><select name="diaochaname"
+					style="width: 200px; height: 26px">
+						<option value="ptmc">平台名称</option>
+						<option value="pzrq">调查年度</option>
+						<option value="name" selected>填表人</option>
+
+				</select></td>
+				<td colspan="2"><input type="text" name="name"
+					style="width: 300px; height: 26px" /></td>
+
+			</tr>
+
+		</div>
+		<td><input type="submit" name="Submit" value="搜索"
+			style="width: 50px; height: 26px"></td>
+	</form>
+</body>
+</html>

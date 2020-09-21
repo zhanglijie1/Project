@@ -1,0 +1,4 @@
+windows10
+mysql5.0
+运行demo.py文件
+运行项目需运行demo.py文件，更改数据库信息账号密码 数据库在DB.py文件里修改

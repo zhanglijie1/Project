@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybaits.org//DTD Config 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.ChaxunMapper">
+    <!-- 根据 id 查找 t_role 中角色信息，返回 角色id 和 权限名 -->
+    
+    <select id="getChaxun" parameterType = "String" resultType="Chaxun">
+        select * from weihu join fengmian on weihu.username=fengmian.username where 1=1 
+        <if test="name!=null and name.trim()!=''">
+         and ${diaochaname} like '%${name}%'
+        </if>
+         <if test="name1!=null and name1.trim()!='' and zhi1.trim()==0">
+         ${key1} ${diaochaname1} like '%${name1}%'
+        </if>
+         <if test="name1!=null and name1.trim()!='' and zhi1.trim()==1">
+         ${key1} ${diaochaname1} = '${name1}'
+        </if>
+         <if test="name2!=null and name2.trim()!='' and zhi2.trim()==0">
+         ${key2} ${diaochaname2} like '%${name2}%'
+        </if>
+          <if test="name2!=null and name2.trim()!='' and zhi2.trim()==1">
+         ${key2} ${diaochaname2} = '${name2}'
+        </if>
+        <if test="pzrq1!=null and pzrq2!=null and pzrq1.trim()!='' and pzrq2.trim()!=''">
+         and pzrq between ${pzrq1} and ${pzrq2}
+        </if>
+    </select>
+ 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+   <!--  <insert id="insertRole" >
+         insert into mydb(roleName, note) values (${roleName}, ${note})
+    </insert>
+    在 t_role 根据id, 删除一条角色数据
+    <delete id="deleteRole" parameterType="long">
+            delete from mydb where id = ${id}
+    </delete> -->
+</mapper>

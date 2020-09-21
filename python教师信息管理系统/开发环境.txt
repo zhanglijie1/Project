@@ -1,0 +1,4 @@
+Python3.6
+Mysql5.0
+Navicat Premium 12
+pucharm

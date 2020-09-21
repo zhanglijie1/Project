@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginAction</servlet-name>
+    <servlet-class>action.LoginAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RegisterAction</servlet-name>
+    <servlet-class>action.RegisterAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TopicListAction</servlet-name>
+    <servlet-class>action.TopicListAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TopicAction</servlet-name>
+    <servlet-class>action.TopicAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TopicAction3</servlet-name>
+    <servlet-class>action.TopicAction3</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DianpraiseAction</servlet-name>
+    <servlet-class>action.DianpraiseAction</servlet-class>
+  </servlet>
+    <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DianpraiseAction1</servlet-name>
+    <servlet-class>action.DianpraiseAction1</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleteAction</servlet-name>
+    <servlet-class>action.DeleteAction</servlet-class>
+  </servlet>
+    <servlet>
+    <servlet-name>DeleteAction1</servlet-name>
+    <servlet-class>action.DeleteAction1</servlet-class>
+  </servlet>
+    <servlet>
+    <servlet-name>DeleteAction3</servlet-name>
+    <servlet-class>action.DeleteAction3</servlet-class>
+  </servlet>
+    <servlet>
+    <servlet-name>DeleteServlet</servlet-name>
+    <servlet-class>action.DeleteServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleteServlet1</servlet-name>
+    <servlet-class>action.DeleteServlet1</servlet-class>
+  </servlet>
+    <servlet>
+    <servlet-name>TopicListAction1</servlet-name>
+    <servlet-class>action.TopicListAction1</servlet-class>
+  </servlet>
+     <servlet>
+    <servlet-name>TopicListAction2</servlet-name>
+    <servlet-class>action.TopicListAction2</servlet-class>
+  </servlet>
+    <servlet>
+    <servlet-name>TopicListAction3</servlet-name>
+    <servlet-class>action.TopicListAction3</servlet-class>
+  </servlet>
+     <servlet>
+    <servlet-name>TopicListAction4</servlet-name>
+    <servlet-class>action.TopicListAction4</servlet-class>
+  </servlet>
+     <servlet>
+    <servlet-name>TopicListAction5</servlet-name>
+    <servlet-class>action.TopicListAction5</servlet-class>
+  </servlet>
+     <servlet>
+    <servlet-name>TopicListAction6</servlet-name>
+    <servlet-class>action.TopicListAction6</servlet-class>
+  </servlet>
+      <servlet>
+    <servlet-name>TopicListAction7</servlet-name>
+    <servlet-class>action.TopicListAction7</servlet-class>
+  </servlet>
+     <servlet>
+    <servlet-name>TopicListAction9</servlet-name>
+    <servlet-class>action.TopicListAction9</servlet-class>
+  </servlet>
+   <servlet>
+    <servlet-name>SelectAction</servlet-name>
+    <servlet-class>action.SelectAction</servlet-class>
+  </servlet>
+    <servlet>
+    <servlet-name>UserServlet</servlet-name>
+    <servlet-class>action.UserServlet</servlet-class>
+  </servlet>
+     <servlet>
+    <servlet-name>UpdateServlet</servlet-name>
+    <servlet-class>action.UpdateServlet</servlet-class>
+  </servlet>
+
+
+
+
+<servlet>
+  		<servlet-name>uppicture</servlet-name>
+  		<servlet-class>com.picture.servlet.upServlet</servlet-class>
+  </servlet>
+  <servlet>
+  		<servlet-name>xianshi</servlet-name>
+  		<servlet-class>com.picture.servlet.downloadServlet</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+  		<servlet-name>xianshi</servlet-name>
+  		<url-pattern>/xianshi</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  		<servlet-name>uppicture</servlet-name>
+  		<url-pattern>/uppicture</url-pattern>
+  </servlet-mapping>
+
+
+
+
+
+<servlet-mapping>
+    <servlet-name>UpdateServlet</servlet-name>
+    <url-pattern>/servlet/UpdateServlet</url-pattern>
+  </servlet-mapping>
+<servlet-mapping>
+    <servlet-name>UserServlet</servlet-name>
+    <url-pattern>/servlet/UserServlet</url-pattern>
+  </servlet-mapping>
+<servlet-mapping>
+    <servlet-name>SelectAction</servlet-name>
+    <url-pattern>/servlet/SelectAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginAction</servlet-name>
+    <url-pattern>/servlet/LoginAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RegisterAction</servlet-name>
+    <url-pattern>/servlet/RegisterAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TopicListAction</servlet-name>
+    <url-pattern>/servlet/TopicListAction</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>TopicListAction1</servlet-name>
+    <url-pattern>/servlet/TopicListAction1</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>TopicListAction2</servlet-name>
+    <url-pattern>/servlet/TopicListAction2</url-pattern>
+  </servlet-mapping>
+     <servlet-mapping>
+    <servlet-name>TopicListAction3</servlet-name>
+    <url-pattern>/servlet/TopicListAction3</url-pattern>
+  </servlet-mapping>
+       <servlet-mapping>
+    <servlet-name>TopicListAction4</servlet-name>
+    <url-pattern>/servlet/TopicListAction4</url-pattern>
+  </servlet-mapping>
+       <servlet-mapping>
+    <servlet-name>TopicListAction5</servlet-name>
+    <url-pattern>/servlet/TopicListAction5</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TopicListAction6</servlet-name>
+    <url-pattern>/servlet/TopicListAction6</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>TopicListAction7</servlet-name>
+    <url-pattern>/servlet/TopicListAction7</url-pattern>
+  </servlet-mapping>
+      <servlet-mapping>
+    <servlet-name>TopicListAction9</servlet-name>
+    <url-pattern>/servlet/TopicListAction9</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TopicAction</servlet-name>
+    <url-pattern>/servlet/TopicAction</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>TopicAction3</servlet-name>
+    <url-pattern>/servlet/TopicAction3</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DianpraiseAction</servlet-name>
+    <url-pattern>/servlet/DianpraiseAction</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>DianpraiseAction1</servlet-name>
+    <url-pattern>/servlet/DianpraiseAction1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteAction</servlet-name>
+    <url-pattern>/servlet/DeleteAction</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>DeleteAction1</servlet-name>
+    <url-pattern>/servlet/DeleteAction1</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>DeleteAction3</servlet-name>
+    <url-pattern>/servlet/DeleteAction3</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteServlet</servlet-name>
+    <url-pattern>/servlet/DeleteServlet</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>DeleteServlet1</servlet-name>
+    <url-pattern>/servlet/DeleteServlet1</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
